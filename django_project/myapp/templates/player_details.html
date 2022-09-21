@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Top Team of The Last Decade</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://www2.cs.ryerson.ca/~aadaweh/style.css" />
+  <style></style>
+  <script src=""></script>
+  <body>
+    <h1 class="headings">Top Ten Teams of the Last Decade</h1>
+    <div class="firstH">
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 235px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/bucks.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2020-2021</span>
+              <h2>Milwaukee Bucks</h2>
+              <p>
+                The Milwaukee Bucks are an NBA franchise headquartered in
+                Milwaukee, Wisconsin. Bucks are a part of the Eastern Conference
+                Central Division of the National Basketball Association. The
+                squad began as an expansion team in 1968 and now plays at Fiserv
+                Forum.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_bucks %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 375px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/lakers.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2019-2020</span>
+              <h2>Los Angeles Lakers</h2>
+              <p>
+                Los Angeles Lakers is a professional basketball club
+                headquartered in Los Angeles, California. The Lakers are a
+                member of the Western Conference Pacific Division of the NBA.
+                The Staples Center is their home arena.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">52-19</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">1</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-5</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_lakers %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 250px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/raptors.png"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2018-2019</span>
+              <h2>Toronto Raptors</h2>
+              <p>
+                The Toronto Raptors are a professional basketball club
+                headquartered in Toronto, Ontario, Canada. The Raptors are a
+                part of the NBA's Eastern Conference Atlantic Division. The Air
+                Canada Centre is where they play at home.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">58-24</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">2</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-8</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_raptors %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 195px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/warriors.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2017-2018</span>
+              <h2>Golden State Warriors</h2>
+              <p>
+                The Golden State Warriors are a San Francisco-based American
+                professional basketball club. The Golden State Warriors are a
+                member of the Western Conference Pacific Division of the
+                National Basketball Association. The Chase Center is where they
+                call home.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">58-24</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">2</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-5</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_warriors %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 176px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/rockets.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2017-2018</span>
+              <h2>Houston Rockets</h2>
+              <p>
+                The Houston Rockets are an NBA basketball franchise
+                headquartered in Houston, Texas. The Rockets are a part of the
+                Western Conference's Southwest Division in the National
+                Basketball Association. The team's home games are held at the
+                Toyota Center in downtown Houston.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">65-17</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">1</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">11-6</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_rockets %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondH">
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 250px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/cavs.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2015-2016</span>
+              <h2>Cleveland Cavaliers</h2>
+              <p>
+                The Cleveland Cavaliers are a professional basketball club from
+                Cleveland, Ohio, United States. The Cleveland Cavaliers are a
+                member of the Eastern Conference Central Division of the
+                National Basketball Association.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">57-25</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">1</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-5</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_cavaliers %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 330px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/OKCT.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2015-2016</span>
+              <h2>OKC Thunder</h2>
+              <p>
+                Oklahoma City Thunder is a professional basketball club
+                headquartered in Oklahoma City, Oklahoma. The Oklahoma City
+                Thunder are a part of the NBA's Western Conference Northwest
+                Division. The team's home games are held at the Paycom Center.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">58-24</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">11-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_thunder %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 235px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/spurs.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2013-2014</span>
+              <h2>San Antonio Spurs</h2>
+              <p>
+                The San Antonio Spurs are a professional basketball team located
+                in San Antonio, Texas, United States. The Spurs are a member of
+                the Western Conference's Southwest Division in the National
+                Basketball Association. The AT&T Center in San Antonio is where
+                the club plays its home games.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">62-20</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">1</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_spurs %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 250px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/mia.jpg"
+              alt="Raptors"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2011-2012</span>
+              <h2>Miami Heat</h2>
+              <p>
+                The Miami Heat are a professional basketball team from Miami,
+                Florida. The Heat are a member of the Eastern Conference
+                Southeast Division of the National Basketball Association. The
+                club's home games are held at FTX Arena.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">66-16</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">1</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_heat %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nbaf">
+        <div class="card">
+          <div class="team-front">
+            <img
+              style="border-radius: 15px; width: 225px; height: auto"
+              src="https://www2.cs.ryerson.ca/~aadaweh/img/mavs.jpg"
+              alt="Mavs"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">2010-2011</span>
+              <h2>Dallas Mavericks</h2>
+              <p>
+                The Dallas Mavericks are an NBA basketball franchise
+                headquartered in Dallas, Texas. The Mavericks are a part of the
+                Western Conference's Southwest Division in the National
+                Basketball Association. The American Airlines Center is where
+                the club's home games are held.
+              </p>
+            </div>
+            <hr />
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">57-25</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">West Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-5</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-back">
+            {% for player in players_mavericks %}
+            <img
+              style="border-radius: 15px; width: 160px; height: auto"
+              src=" {{ player.img }}"
+              alt="player"
+            />
+            <hr />
+            <div class="team-info">
+              <span class="date">Team: {{ player.team }}</span>
+              <h2>{{ player.name }}</h2>
+              <p>Number: {{ player.number }}</p>
+              <p>Position: {{ player.position }}</p>
+              <p>School: {{ player.school }}</p>
+            </div>
+            {% endfor %}
+            <div class="team-stats">
+              <div class="stat">
+                <div class="value">46-26</div>
+                <div class="type">Season Record</div>
+              </div>
+              <div class="stat border">
+                <div class="value">3</div>
+                <div class="type">East Standings</div>
+              </div>
+              <div class="stat">
+                <div class="value">16-7</div>
+                <div class="type">Playoff Record</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
